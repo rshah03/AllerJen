@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: "4.+"
+    
+}
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+compileTestJava {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation" << "-Werror"
+}
+
+sourceSets.main.resources.srcDirs = ['src']
+sourceSets.main.java.srcDirs = ['src']
+sourceSets.test.java.srcDirs = ['tests']
+
+jacocoTestReport {
+    doFirst{
+        classDirectories = fileTree(
+                dir: './build/classes/main/app',
+                excludes: ['**/ui/*.class']
+        )
+    }
+
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination "build/reports/coverageHtml"
+    }
+}
+
+defaultTasks 'clean', 'test', 'jacocoTestReport'
