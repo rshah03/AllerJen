@@ -2,7 +2,6 @@ package Mongo;
 
 
 import com.mongodb.DB;
-import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,21 +10,21 @@ import static org.junit.Assert.assertEquals;
 
 public class MongoDB {
 
-    MongoDB mongoDB;
+    MongoSetup mongoSetup;
     MongoClient testClient;
     DB testDB;
 
     @Before
     public void setup() throws Exception {
-        mongoDB = new MongoDB();
+        mongoSetup = new MongoSetup();
         testClient = new MongoClient();
+        testDB = testClient.getDB("TutorBoard");
+
     }
 
     @Test
-    public void getCollectionReturnsCollection() {
-        testDB = testClient.getDB("Tutors");
-        DBCollection testCollection = testDB.getCollection("Tutors");
-        assertEquals("Tutors", testCollection.toString());
+    public void getCollectionReturnsCollection() { 
+        assertEquals("Tutors.Tutors", mongoSetup.getCollectionName("Tutors"));
     }
 
 
