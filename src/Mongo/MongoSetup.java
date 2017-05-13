@@ -12,9 +12,8 @@ public class MongoSetup {
     DB dataBase;
     DBCollection tutors;
 
-
     MongoSetup() {
-        try { mongoClient = new MongoClient(); } catch (UnknownHostException e) {
+        try { mongoClient = new MongoClient("localhost", 3000); } catch (UnknownHostException e) {
             System.out.println("Error connecting to host...");
         }
 
@@ -22,8 +21,6 @@ public class MongoSetup {
         tutors = dataBase.getCollection("Tutors");
     }
 
-    public String getCollectionName(String collectionName) {
-        return tutors.getCollection(collectionName).toString();
-    }
+
 
 }
