@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07a44569-373a-4ff2-9907-7642cde94d98" name="Default" comment="Removed useless test and method.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mongo/Tutor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/test/Mongo/MongoDB.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/Mongo/MongoDB.java" afterPath="$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Mongo/MongoSetup.java" afterPath="$PROJECT_DIR$/src/Mongo/MongoOperations.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java" afterPath="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mongo/MongoSetup.java" afterPath="$PROJECT_DIR$/src/Mongo/MongoSetup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mongo/Tutor.java" afterPath="$PROJECT_DIR$/src/Mongo/Tutor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -53,18 +48,18 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
+            <state relative-caret-position="19">
               <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoSetup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Mongo/MongoSetup.java">
+      <file leaf-file-name="MongoOperations.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,18 +70,18 @@
       <file leaf-file-name="Tutor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+            <state relative-caret-position="323">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoSetupTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java">
+      <file leaf-file-name="MongoOperationsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="310">
+              <caret line="23" column="119" lean-forward="false" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,6 +97,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -530,9 +530,12 @@
         <option value="$PROJECT_DIR$/src/Mongo/MongoDB.java" />
         <option value="$PROJECT_DIR$/tests/Mongo/MongoDB.java" />
         <option value="$PROJECT_DIR$/tests/Mongo/MongoSetup.java" />
-        <option value="$PROJECT_DIR$/src/Mongo/Tutor.java" />
         <option value="$PROJECT_DIR$/src/Mongo/MongoSetup.java" />
         <option value="$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java" />
+        <option value="$PROJECT_DIR$/src/Mongo/Tutor.java" />
+        <option value="$PROJECT_DIR$/src/Mongo/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/Mongo/MongoOperations.java" />
+        <option value="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" />
       </list>
     </option>
   </component>
@@ -557,7 +560,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -608,8 +612,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -629,8 +632,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MongoSetupTest">
-    <configuration default="false" name="MongoSetup.getCollectionReturnsCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MongoOperationsTest">
+    <configuration default="false" name="MongoOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Mongo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Mongo.MongoOperations" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TutorBoard" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MongoOperationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Mongo.*" />
@@ -641,8 +664,34 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Mongo" />
-      <option name="MAIN_CLASS_NAME" value="Mongo.MongoSetup" />
-      <option name="METHOD_NAME" value="getCollectionReturnsCollection" />
+      <option name="MAIN_CLASS_NAME" value="Mongo.MongoOperationsTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MongoOperationsTest.insertTutorInsertsATutor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Mongo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TutorBoard" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Mongo" />
+      <option name="MAIN_CLASS_NAME" value="Mongo.MongoOperationsTest" />
+      <option name="METHOD_NAME" value="insertTutorInsertsATutor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -656,27 +705,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="MongoSetup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Mongo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Mongo.MongoSetup" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TutorBoard" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MongoSetupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MongoOperationsTest.insertMultipleTutors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="Mongo.*" />
@@ -687,9 +716,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Mongo" />
-      <option name="MAIN_CLASS_NAME" value="Mongo.MongoSetupTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Mongo.MongoOperationsTest" />
+      <option name="METHOD_NAME" value="insertMultipleTutors" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -700,6 +729,26 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Mongo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Mongo.TestMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TutorBoard" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -906,16 +955,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.MongoSetup.getCollectionReturnsCollection" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MongoSetup" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MongoSetupTest" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.MongoOperations" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertTutorInsertsATutor" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertMultipleTutors" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestMain" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MongoSetupTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MongoSetup" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MongoSetup.getCollectionReturnsCollection" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestMain" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertTutorInsertsATutor" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertMultipleTutors" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MongoOperations" />
       </list>
     </recent_temporary>
   </component>
@@ -933,35 +986,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MongoDB_getCollectionReturnsCollection - 2017.05.06 at 19h 10m 46s.xml">
-      <configuration name="MongoDB.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 28m 01s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoDB_getCollectionReturnsCollection - 2017.05.06 at 19h 13m 10s.xml">
-      <configuration name="MongoDB.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 28m 57s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoDB_getCollectionReturnsCollection - 2017.05.06 at 19h 13m 29s.xml">
-      <configuration name="MongoDB.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 31m 51s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoDB_getCollectionReturnsCollection - 2017.05.06 at 19h 14m 39s.xml">
-      <configuration name="MongoDB.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 43m 31s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoDB_getCollectionReturnsCollection - 2017.05.06 at 19h 14m 47s.xml">
-      <configuration name="MongoDB.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 43m 42s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoDB_getCollectionReturnsCollection - 2017.05.06 at 19h 16m 59s.xml">
-      <configuration name="MongoDB.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 43m 52s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoSetupTest - 2017.05.09 at 00h 40m 07s.xml">
-      <configuration name="MongoSetupTest" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 02s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoSetupTest - 2017.05.09 at 00h 40m 39s.xml">
-      <configuration name="MongoSetupTest" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 11s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoSetup_getCollectionReturnsCollection - 2017.05.06 at 19h 19m 59s.xml">
-      <configuration name="MongoSetup.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 27s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoSetup_getCollectionReturnsCollection - 2017.05.06 at 19h 20m 32s.xml">
-      <configuration name="MongoSetup.getCollectionReturnsCollection" configurationId="JUnit" />
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 55s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -971,18 +1024,20 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0546875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -994,9 +1049,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1007,7 +1060,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Removed useless test and method." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1023,7 +1078,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoSetup.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
@@ -1033,7 +1124,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
@@ -1059,7 +1150,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
@@ -1069,7 +1160,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoSetup.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
@@ -1087,36 +1178,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="19">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoSetup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="361">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="23" column="119" lean-forward="false" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
