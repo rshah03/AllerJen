@@ -20,12 +20,26 @@ public class MongoOperations {
     }
 
     //Will be called by UI when inserting Tutors
-    public void addTutor(Tutor _tutor) {
-        BasicDBObject tutor = new BasicDBObject("_id", (_tutor.getID().charAt(_tutor.getID().length()-1) + _tutor.getName().charAt(0) + _tutor.getName().charAt(1)));
-        tutor.put("sid", _tutor.getID());
+
+    public BasicDBObject tutorAdapter(Tutor _tutor){
+        BasicDBObject tutor;
+        String uniqueID = Character.toString(_tutor.getID().charAt(_tutor.getID().length()-1))
+                + Character.toString(_tutor.getName().charAt(0))
+                + Character.toString(_tutor.getName().charAt(1));
+
+        tutor = new BasicDBObject("_id", _tutor.getID());
         tutor.put("name", _tutor.getName());
         tutor.put("classification", _tutor.getTutorYear().toString());
-        tutors.insert(tutor);
+        return tutor;
+    }
+
+    public void addTutor(Tutor _tutor) {
+        tutors.insert(tutorAdapter(_tutor));
+    }
+
+    public void removeTutor(Tutor _tutor) {
+        BasicDBObject query = new BasicDBObject("_id", _tutor.getID());
+        tutors.findAndRemove(query);
     }
 
 
