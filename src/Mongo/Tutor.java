@@ -1,23 +1,25 @@
 package Mongo;
 
-/**
- * Created by coder on 5/9/17.
- */
-public class Tutor {
+import com.mongodb.BasicDBObject;
 
-    String id;
+public class Tutor extends BasicDBObject{
+
+    enum Classification{ FRESHMAN, SOPHMORE, JUNIOR, SENIOR }
+    String sid;
     String firstName;
     String lastName;
-    enum classification{ FRESHMAN, SOPHMORE, JUNIOR, SENIOR }
+    public Classification tutorYear;
 
-    public Tutor(String _id, String _firstName, String _lastName) {
-        id = _id;
+    public Tutor(String _sid, String _firstName, String _lastName, Classification _tutorYear) {
+        sid = _sid;
         firstName = _firstName;
         lastName = _lastName;
+        tutorYear = _tutorYear;
     }
 
-    public String getID() { return id; }
+    public String getID() { return sid; }
 
     public String getName() {return firstName + " " + lastName; }
 
+    public Classification getTutorYear() {return tutorYear; }
 }
