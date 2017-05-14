@@ -13,12 +13,12 @@ import static org.junit.Assert.assertEquals;
 
 public class MongoOperationsTest {
 
-    MongoOperations mongoSetup;
+    MongoOperations mongo;
     Date[] availability;
 
     @Before
     public void setup() throws Exception {
-        mongoSetup = new MongoOperations();
+        mongo = new MongoOperations();
         //availability = {new Date(), new Date()};
         //mongoSetup.tutors.drop();
     }
@@ -33,10 +33,8 @@ public class MongoOperationsTest {
     @Test
     public void insertTutorInsertsATutor() {
         Tutor t = new Tutor("126","John", "Doe", Tutor.Classification.FRESHMAN);
-        mongoSetup.addTutor(t);
-        assertEquals(mongoSetup.tutors.count(), 1);
-        //assertTrue(mongoSetup.tutors.count() > 0);
-        mongoSetup.tutors.drop();
+        mongo.addTutor(t);
+        assertEquals(mongo.tutors.count(), 1);
     }
 
     @Test
@@ -46,13 +44,42 @@ public class MongoOperationsTest {
         t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE);
         List<Tutor> tutors = Arrays.asList(t1, t2);
         for(Tutor tutor : tutors)
-            mongoSetup.addTutor(tutor);
-        assertEquals(mongoSetup.tutors.count(), 2);
-        mongoSetup.tutors.drop();
+            mongo.addTutor(tutor);
+        assertEquals(mongo.tutors.count(), 2);
+    }
+
+    @Test
+    public void removeOneTutorFromCollection() {
+        Tutor t1, t2;
+        t1 = new Tutor("123","Vohn", "Doe", Tutor.Classification.FRESHMAN);
+        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE);
+        List<Tutor> tutors = Arrays.asList(t1, t2);
+        for(Tutor tutor : tutors)
+            mongo.addTutor(tutor);
+
+        mongo.removeTutor(t1);
+        assertEquals(mongo.tutors.count(), 1);
+    }
+
+    @Test
+    public void removeMultipleTutorsFromCollection() {
+        Tutor t1, t2, t3;
+        t1 = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN);
+        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE);
+        t3 = new Tutor("789", "Adam", "Nobody", Tutor.Classification.SENIOR);
+        List<Tutor> tutors = Arrays.asList(t1, t2, t3);
+        for(Tutor tutor : tutors)
+            mongo.addTutor(tutor);
+
+        List<Tutor> tutorsToRemove = Arrays.asList(t1, t3);
+        for(Tutor tutor : tutorsToRemove)
+            mongo.removeTutor(tutor);
+
+        assertEquals(mongo.tutors.count(), 1);
     }
 
     @After
     public void clearDB() {
-        mongoSetup.tutors.drop();
+        mongo.tutors.drop();
     }
 }

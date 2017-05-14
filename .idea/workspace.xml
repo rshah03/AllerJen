@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07a44569-373a-4ff2-9907-7642cde94d98" name="Default" comment="Removed useless test and method.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mongo/MongoOperations.java" afterPath="$PROJECT_DIR$/src/Mongo/MongoOperations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" afterPath="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,12 +79,12 @@
       <file leaf-file-name="MongoOperationsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="-608">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1650#1651#0" expanded="true" />
-                <element signature="e#1690#1691#0" expanded="true" />
+                <element signature="e#2581#2582#0" expanded="true" />
+                <element signature="e#2616#2617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -989,12 +987,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 14h 58m 42s.xml">
-      <configuration name="MongoOperationsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 00m 31s.xml">
-      <configuration name="MongoOperationsTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 03m 21s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
@@ -1017,6 +1009,12 @@
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 07m 59s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 11m 52s.xml">
+      <configuration name="MongoOperationsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 14m 51s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1107,8 +1105,8 @@
           <caret line="23" column="119" lean-forward="false" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1135,8 +1133,8 @@
           <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1179,8 +1177,8 @@
           <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1207,8 +1205,8 @@
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1273,12 +1271,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="-608">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
