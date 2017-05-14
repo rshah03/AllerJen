@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07a44569-373a-4ff2-9907-7642cde94d98" name="Default" comment="Removed useless test and method.">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Mongo/MongoSetup.java" afterPath="$PROJECT_DIR$/src/Mongo/MongoOperations.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java" afterPath="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mongo/Tutor.java" afterPath="$PROJECT_DIR$/src/Mongo/Tutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" afterPath="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -58,10 +55,12 @@
       <file leaf-file-name="MongoOperations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="399">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
+                <element signature="e#1142#1143#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +69,8 @@
       <file leaf-file-name="Tutor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="437">
+              <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -80,10 +79,12 @@
       <file leaf-file-name="MongoOperationsTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="23" column="119" lean-forward="false" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
+            <state relative-caret-position="-608">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2581#2582#0" expanded="true" />
+                <element signature="e#2616#2617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -532,8 +533,8 @@
         <option value="$PROJECT_DIR$/tests/Mongo/MongoSetup.java" />
         <option value="$PROJECT_DIR$/src/Mongo/MongoSetup.java" />
         <option value="$PROJECT_DIR$/tests/Mongo/MongoSetupTest.java" />
-        <option value="$PROJECT_DIR$/src/Mongo/Tutor.java" />
         <option value="$PROJECT_DIR$/src/Mongo/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/Mongo/Tutor.java" />
         <option value="$PROJECT_DIR$/src/Mongo/MongoOperations.java" />
         <option value="$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java" />
       </list>
@@ -560,8 +561,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -965,8 +966,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestMain" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertTutorInsertsATutor" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertTutorInsertsATutor" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestMain" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MongoOperationsTest.insertMultipleTutors" />
         <item index="4" class="java.lang.String" itemvalue="Application.MongoOperations" />
       </list>
@@ -986,34 +987,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 28m 01s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 03m 21s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 28m 57s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 04m 17s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 31m 51s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 05m 21s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 43m 31s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 05m 42s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 43m 42s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 05m 53s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 43m 52s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 06m 07s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 02s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 07m 26s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 11s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 07m 59s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 27s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 11m 52s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MongoOperationsTest - 2017.05.14 at 00h 45m 55s.xml">
+    <history-entry file="MongoOperationsTest - 2017.05.14 at 15h 14m 51s.xml">
       <configuration name="MongoOperationsTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1037,7 +1038,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0546875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1050,6 +1050,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1078,6 +1079,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="23" column="119" lean-forward="false" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1092,6 +1133,8 @@
           <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1102,6 +1145,8 @@
           <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1120,6 +1165,8 @@
           <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1130,6 +1177,8 @@
           <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1156,6 +1205,8 @@
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1166,6 +1217,8 @@
           <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1178,11 +1231,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="380">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,32 +1249,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/TestMain.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="399">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mongo/MongoOperations.java">
+    <entry file="file://$PROJECT_DIR$/src/Mongo/Tutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="437">
+          <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Mongo/MongoOperationsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="23" column="119" lean-forward="false" selection-start-line="23" selection-start-column="119" selection-end-line="23" selection-end-column="119" />
+        <state relative-caret-position="-608">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
           </folding>
         </state>
       </provider>
