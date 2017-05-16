@@ -1,4 +1,4 @@
-package Mongo;
+package Tutor;
 
 
 import org.junit.After;
@@ -11,14 +11,14 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class MongoOperationsTest {
+public class TutorMongoOpsTest {
 
-    MongoOperations mongo;
+    TutorMongo mongo;
     Date[] availability;
 
     @Before
     public void setup() throws Exception {
-        mongo = new MongoOperations();
+        mongo = new TutorMongo();
         //availability = {new Date(), new Date()};
         //mongoSetup.tutors.drop();
     }
