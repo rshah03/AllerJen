@@ -32,7 +32,7 @@ public class TutorMongoOpsTest {
 
     @Test
     public void insertTutorInsertsATutor() {
-        Tutor t = new Tutor("126","John", "Doe", Tutor.Classification.FRESHMAN);
+        Tutor t = new Tutor("126","John", "Doe", Tutor.Classification.FRESHMAN, 1);
         mongo.addTutor(t);
         assertEquals(mongo.tutors.count(), 1);
     }
@@ -40,8 +40,8 @@ public class TutorMongoOpsTest {
     @Test
     public void insertMultipleTutors() {
         Tutor t1, t2;
-        t1 = new Tutor("123","Vohn", "Doe", Tutor.Classification.FRESHMAN);
-        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE);
+        t1 = new Tutor("589","Vohn", "Doe", Tutor.Classification.FRESHMAN, 1);
+        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
         List<Tutor> tutors = Arrays.asList(t1, t2);
         for(Tutor tutor : tutors)
             mongo.addTutor(tutor);
@@ -51,8 +51,8 @@ public class TutorMongoOpsTest {
     @Test
     public void removeOneTutorFromCollection() {
         Tutor t1, t2;
-        t1 = new Tutor("123","Vohn", "Doe", Tutor.Classification.FRESHMAN);
-        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE);
+        t1 = new Tutor("123","Vohn", "Doe", Tutor.Classification.FRESHMAN, 4);
+        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
         List<Tutor> tutors = Arrays.asList(t1, t2);
         for(Tutor tutor : tutors)
             mongo.addTutor(tutor);
@@ -64,9 +64,9 @@ public class TutorMongoOpsTest {
     @Test
     public void removeMultipleTutorsFromCollection() {
         Tutor t1, t2, t3;
-        t1 = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN);
-        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE);
-        t3 = new Tutor("789", "Adam", "Nobody", Tutor.Classification.SENIOR);
+        t1 = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
+        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 3);
+        t3 = new Tutor("789", "Adam", "Nobody", Tutor.Classification.SENIOR, 2);
         List<Tutor> tutors = Arrays.asList(t1, t2, t3);
         for(Tutor tutor : tutors)
             mongo.addTutor(tutor);
