@@ -1,7 +1,7 @@
 package Student;
 
 public class Student {
-    enum Classification{ FRESHMAN, SOPHMORE, JUNIOR, SENIOR }
+    public enum Classification{ FRESHMAN, SOPHMORE, JUNIOR, SENIOR }
     String sid;
     String firstName;
     String lastName;

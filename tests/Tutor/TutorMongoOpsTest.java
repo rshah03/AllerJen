@@ -1,6 +1,7 @@
 package Tutor;
 
 
+import Student.Student;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -83,6 +84,9 @@ public class TutorMongoOpsTest {
     public void addOneSubjectToTutor() {
         Tutor tutor = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
         tutor.addSubject("COSC 101");
+
+        mongo.addTutor(tutor);
+        assertEquals(mongo.tutors.count(), 1);
         assertEquals(1, tutor.getSubjects().size());
     }
 
@@ -92,6 +96,11 @@ public class TutorMongoOpsTest {
         List<String> subjects = Arrays.asList("COSC 101", "COSC 102", "MATH 201");
         for(String subject : subjects)
             tutor.addSubject(subject);
+
+        mongo.addTutor(tutor);
+
+        assertEquals(mongo.tutors.count(), 1);
+
         assertEquals(3, tutor.getSubjects().size());
     }
 
@@ -115,15 +124,37 @@ public class TutorMongoOpsTest {
                 && tutor3.getSubjects().size() == 1)
             collectivePass = true;
 
+        mongo.addTutor(tutor1);
+        mongo.addTutor(tutor2);
+        mongo.addTutor(tutor3);
+
+        assertEquals(mongo.tutors.count(), 3);
         assertTrue(collectivePass);
     }
 
     @Test
     public void onlyAllowStudentsWhileBelowCapacity() {
+        Tutor tutor = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
+        tutor.addStudent(new Student("1001","Jack", "Doe", Student.Classification.FRESHMAN));
 
+        mongo.addTutor(tutor);
 
+        assertEquals(mongo.tutors.count(), 1);
+        assertTrue(!tutor.isAtCapacity());
        //Create method to add student objects
-        
+    }
+
+    @Test
+    public void failToAddStudentsIfOverCapacity() {
+        Tutor tutor = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 1);
+        tutor.addStudent(new Student("1001","Jack", "Doe", Student.Classification.FRESHMAN));
+        tutor.addStudent(new Student("1002","Jill", "Doe", Student.Classification.FRESHMAN));
+        tutor.addStudent(new Student("1003","Jane", "Doe", Student.Classification.FRESHMAN));
+
+        mongo.addTutor(tutor);
+
+        assertEquals(mongo.tutors.count(), 1);
+        assertTrue(tutor.isAtCapacity());
     }
 
     @After

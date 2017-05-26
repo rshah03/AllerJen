@@ -1,7 +1,10 @@
 package Tutor;
 
+import Student.Student;
 import com.mongodb.BasicDBObject;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tutor extends BasicDBObject{
 
@@ -10,7 +13,9 @@ public class Tutor extends BasicDBObject{
     String firstName;
     String lastName;
     int maxStudents;
+    int currentStudents;
     List<String> subjects;
+    List<Student> students;
     public Classification tutorYear;
 
     public Tutor(String _tid, String _firstName, String _lastName, Classification _tutorYear, int _maxStudents) {
@@ -19,7 +24,9 @@ public class Tutor extends BasicDBObject{
         lastName = _lastName;
         tutorYear = _tutorYear;
         maxStudents = _maxStudents;
+        currentStudents = 0;
         subjects = new ArrayList<>();
+        students = new ArrayList<>();
 
         //TODO: add functionality for time slots
     }
@@ -36,7 +43,18 @@ public class Tutor extends BasicDBObject{
 
     public List<String> getSubjects() { return subjects; }
 
-    public boolean isAtCapacity(int students) {
-        return students > maxStudents;
+    public void addStudent(Student student) {
+        if(!isAtCapacity()) {
+            students.add(student);
+            currentStudents++;
+        }
+    }
+
+    public List<Student> getStudents() { return students; }
+
+    public int getStudentCap() { return maxStudents; }
+
+    public boolean isAtCapacity() {
+        return currentStudents >= maxStudents;
     }
 }
