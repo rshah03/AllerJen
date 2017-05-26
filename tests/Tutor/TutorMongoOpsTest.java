@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TutorMongoOpsTest {
 
@@ -32,17 +33,17 @@ public class TutorMongoOpsTest {
 
     @Test
     public void insertTutorInsertsATutor() {
-        Tutor t = new Tutor("126","John", "Doe", Tutor.Classification.FRESHMAN, 1);
-        mongo.addTutor(t);
+        Tutor tutor = new Tutor("126","John", "Doe", Tutor.Classification.FRESHMAN, 1);
+        mongo.addTutor(tutor);
         assertEquals(mongo.tutors.count(), 1);
     }
 
     @Test
     public void insertMultipleTutors() {
-        Tutor t1, t2;
-        t1 = new Tutor("589","Vohn", "Doe", Tutor.Classification.FRESHMAN, 1);
-        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
-        List<Tutor> tutors = Arrays.asList(t1, t2);
+        Tutor tutor1, tutor2;
+        tutor1 = new Tutor("589","Vohn", "Doe", Tutor.Classification.FRESHMAN, 1);
+        tutor2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
+        List<Tutor> tutors = Arrays.asList(tutor1, tutor2);
         for(Tutor tutor : tutors)
             mongo.addTutor(tutor);
         assertEquals(mongo.tutors.count(), 2);
@@ -50,32 +51,79 @@ public class TutorMongoOpsTest {
 
     @Test
     public void removeOneTutorFromCollection() {
-        Tutor t1, t2;
-        t1 = new Tutor("123","Vohn", "Doe", Tutor.Classification.FRESHMAN, 4);
-        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
-        List<Tutor> tutors = Arrays.asList(t1, t2);
+        Tutor tutor1, tutor2;
+        tutor1 = new Tutor("123","Vohn", "Doe", Tutor.Classification.FRESHMAN, 4);
+        tutor2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 2);
+        List<Tutor> tutors = Arrays.asList(tutor1, tutor2);
         for(Tutor tutor : tutors)
             mongo.addTutor(tutor);
 
-        mongo.removeTutor(t1);
+        mongo.removeTutor(tutor1);
         assertEquals(mongo.tutors.count(), 1);
     }
 
     @Test
     public void removeMultipleTutorsFromCollection() {
-        Tutor t1, t2, t3;
-        t1 = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
-        t2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 3);
-        t3 = new Tutor("789", "Adam", "Nobody", Tutor.Classification.SENIOR, 2);
-        List<Tutor> tutors = Arrays.asList(t1, t2, t3);
+        Tutor tutor1, tutor2, tutor3;
+        tutor1 = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
+        tutor2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 3);
+        tutor3 = new Tutor("789", "Adam", "Nobody", Tutor.Classification.SENIOR, 2);
+        List<Tutor> tutors = Arrays.asList(tutor1, tutor2, tutor3);
         for(Tutor tutor : tutors)
             mongo.addTutor(tutor);
 
-        List<Tutor> tutorsToRemove = Arrays.asList(t1, t3);
+        List<Tutor> tutorsToRemove = Arrays.asList(tutor1, tutor3);
         for(Tutor tutor : tutorsToRemove)
             mongo.removeTutor(tutor);
 
         assertEquals(mongo.tutors.count(), 1);
+    }
+
+    @Test
+    public void addOneSubjectToTutor() {
+        Tutor tutor = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
+        tutor.addSubject("COSC 101");
+        assertEquals(1, tutor.getSubjects().size());
+    }
+
+    @Test
+    public void addMultipleSubjectsToOneTutor() {
+        Tutor tutor = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
+        List<String> subjects = Arrays.asList("COSC 101", "COSC 102", "MATH 201");
+        for(String subject : subjects)
+            tutor.addSubject(subject);
+        assertEquals(3, tutor.getSubjects().size());
+    }
+
+    @Test
+    public void addSubjectsToMultipleTutors() {
+        Tutor tutor1 = new Tutor("123","John", "Doe", Tutor.Classification.FRESHMAN, 2);
+        Tutor tutor2 = new Tutor("456","Jane", "Doe", Tutor.Classification.SOPHMORE, 3);
+        Tutor tutor3 = new Tutor("789", "Adam", "Nobody", Tutor.Classification.SENIOR, 2);
+
+        tutor1.addSubject("COSC 101");
+        tutor1.addSubject("MATH 210");
+
+        tutor2.addSubject("COSC 102");
+
+        tutor3.addSubject("COSC 301");
+
+        boolean collectivePass = false;
+
+        if(tutor1.getSubjects().size() == 2
+                && tutor2.getSubjects().size() == 1
+                && tutor3.getSubjects().size() == 1)
+            collectivePass = true;
+
+        assertTrue(collectivePass);
+    }
+
+    @Test
+    public void onlyAllowStudentsWhileBelowCapacity() {
+
+
+       //Create method to add student objects
+        
     }
 
     @After

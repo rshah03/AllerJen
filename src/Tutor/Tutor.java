@@ -35,4 +35,8 @@ public class Tutor extends BasicDBObject{
     }
 
     public List<String> getSubjects() { return subjects; }
+
+    public boolean isAtCapacity(int students) {
+        return students > maxStudents;
+    }
 }
